@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jihad Fisabilillah, a product designer and illustrator.">
+  <title>Portofolio | Jihad Fisabilillah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER: navbar + hero (title and short description) ===== -->
+  <header class="hero" id="top">
+    <!-- IMAGE: hero background photo -->
+    <img class="hero-bg" src="images/background.png" alt="">
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#top" class="brand">
+        <!-- IMAGE: your logo -->
+        <img class="brand-logo" src="images/star.png" alt="Logo">
+        <span>Portofolio</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Hello!</h1>
+      <p>my name is <strong>Jihad Fisabilillah</strong>, i do design and illustration for fun, professionally</p>
+      <!-- IMAGE: signature -->
+      <img class="signature" src="images/ghard.png" alt="Signature">
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <span class="tag">about me</span>
+      <p class="about-text">
+        I'm a Product Designer who sometimes gets a little excited about making
+        complicated things feel simple. I care about small details, the edge
+        cases everyone forgets and shipping work that genuinely makes
+        someone's day easier.
+      </p>
+      <hr>
+
+      <h2 class="software-title">software:</h2>
+      <!-- IMAGES: software icons (5) -->
+      <ul class="software-list">
+        <li><img src="images/ClipStudio.png" alt="Software icon 1"></li>
+        <li><img src="images/Corel.png" alt="Software icon 2"></li>
+        <li><img src="images/photoshop.png" alt="Software icon 3"></li>
+        <li><img src="images/adobeillustrator.png" alt="Software icon 4"></li>
+        <li><img src="images/Affinity.png" alt="Software icon 5"></li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="projects-tab">Portofolio</div>
+      <div class="projects-panel">
+        <!-- IMAGES: project images (3) -->
+        <article class="card"><img src="images/Project1.png" alt="Project 1"></article>
+        <article class="card"><img src="images/Project2.png" alt="Project 2"></article>
+        <article class="card"><img src="images/Project3.png" alt="Project 3"></article>
+      </div>
+    </section>
+
+    <!-- ===== CLIENTS ===== -->
+    <section class="clients">
+      <h2>Groups I've worked with</h2>
+      <!-- IMAGES: group logos (15) -->
+      <ul class="client-list">
+        <li><img src="images/1.png" alt="Group logo 1"></li>
+        <li><img src="images/2.png" alt="Group logo 2"></li>
+        <li><img src="images/3.png" alt="Group logo 3"></li>
+        <li><img src="images/4.png" alt="Group logo 4"></li>
+        <li><img src="images/5.png" alt="Group logo 5"></li>
+        <li><img src="images/6.png" alt="Group logo 6"></li>
+        <li><img src="images/7.png" alt="Group logo 7"></li>
+        <li><img src="images/8.png" alt="Group logo 8"></li>
+        <li><img src="images/9.png" alt="Group logo 9"></li>
+        <li><img src="images/10.png" alt="Group logo 10"></li>
+        <li><img src="images/11.png" alt="Group logo 11"></li>
+        <li><img src="images/12.png" alt="Group logo 12"></li>
+        <li><img src="images/13.png" alt="Group logo 13"></li>
+        <li><img src="images/14.png" alt="Group logo 14"></li>
+        <li><img src="images/15.png" alt="Group logo 15"></li>
+      </ul>
+    </section>
+
+    <!-- ===== CONTACT (form validation + "message sent") ===== -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <small class="error" id="emailError"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell me about your project"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit" class="btn-submit">Send</button>
+        <p class="form-success" id="formSuccess" hidden></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Jihad Fisabilillah</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
